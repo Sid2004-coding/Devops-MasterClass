@@ -2,6 +2,10 @@ name: Hello Node Js App to Docker
 
 on:
    push:
+     branches:
+        - main
+     paths:
+        - "docker/app1-hello/node"
    workflow_dispatch:
 jobs:
     build-test:
